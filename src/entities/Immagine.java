@@ -5,6 +5,7 @@ public class Immagine extends ElementoMultimediale {
 
     public Immagine(String titolo, int luminosita) {
         super(titolo);
+        this.luminosita = luminosita;
     }
 
     public void aumentaLuminosita() {
@@ -13,5 +14,11 @@ public class Immagine extends ElementoMultimediale {
 
     public void diminuisciLuminosita() {
         if (luminosita > 0) luminosita--;
+    }
+
+    @Override
+    public void avviaAzzione() {
+        show();
+
     }
 }

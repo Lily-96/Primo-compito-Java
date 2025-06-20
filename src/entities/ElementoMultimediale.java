@@ -4,7 +4,7 @@ import interfaces.Luminosita;
 import interfaces.Riproducibile;
 
 public abstract class ElementoMultimediale implements Riproducibile, Luminosita {
-    private String titolo;
+    protected String titolo;
 
     public ElementoMultimediale(String titolo) {
         this.titolo = titolo;
@@ -14,14 +14,23 @@ public abstract class ElementoMultimediale implements Riproducibile, Luminosita 
         return titolo;
     }
 
+
     @Override
-    public void luminosita() {
+    public void show() {
 
     }
 
+    @Override
+    public String toString() {
+        return "ElementoMultimediale{" +
+                "titolo='" + titolo + '\'' +
+                '}';
+    }
 
     @Override
     public void play() {
 
     }
+
+    public abstract void avviaAzzione();
 }
