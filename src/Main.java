@@ -1,4 +1,4 @@
-import entities.Video;
+import entities.ElementoMultimediale;
 
 import java.util.Scanner;
 
@@ -6,8 +6,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        ElementoMultimediale[] elementi = new ElementoMultimediale[5];
 
-        System.out.println("Titolo: ");
+
+        //prova per vedere se funziona
+        /*System.out.println("Titolo: ");
         String titolo = scanner.nextLine();
         System.out.println("Durata: ");
         int durata = scanner.nextInt();
@@ -17,8 +20,8 @@ public class Main {
         int luminosita = scanner.nextInt();
 
         Video videoProva = new Video(titolo, durata, volume, luminosita);
-        videoProva.avviaAzione();
-
+       videoProva.avviaAzione();
+*/
 
     }
 }
