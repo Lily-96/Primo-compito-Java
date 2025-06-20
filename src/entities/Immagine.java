@@ -16,9 +16,15 @@ public class Immagine extends ElementoMultimediale {
         if (luminosita > 0) luminosita--;
     }
 
+    public void show() {
+        System.out.println(titolo + "*".repeat(luminosita));
+    }
+
     @Override
-    public void avviaAzzione() {
+    public void avviaAzione() {
         show();
 
     }
+
+
 }

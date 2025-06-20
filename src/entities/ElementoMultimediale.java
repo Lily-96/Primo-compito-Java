@@ -1,9 +1,7 @@
 package entities;
 
-import interfaces.Luminosita;
-import interfaces.Riproducibile;
 
-public abstract class ElementoMultimediale implements Riproducibile, Luminosita {
+public abstract class ElementoMultimediale {
     protected String titolo;
 
     public ElementoMultimediale(String titolo) {
@@ -16,21 +14,13 @@ public abstract class ElementoMultimediale implements Riproducibile, Luminosita 
 
 
     @Override
-    public void show() {
-
-    }
-
-    @Override
     public String toString() {
         return "ElementoMultimediale{" +
                 "titolo='" + titolo + '\'' +
                 '}';
     }
 
-    @Override
-    public void play() {
+    public abstract void avviaAzione();
 
-    }
 
-    public abstract void avviaAzzione();
 }

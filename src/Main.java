@@ -17,7 +17,7 @@ public class Main {
         int luminosita = scanner.nextInt();
 
         Video videoProva = new Video(titolo, durata, volume, luminosita);
-        videoProva.avviaAzzione();
+        videoProva.avviaAzione();
 
 
     }

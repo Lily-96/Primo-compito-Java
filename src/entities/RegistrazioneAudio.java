@@ -6,14 +6,13 @@ public class RegistrazioneAudio extends ElementoMultimediale {
 
     public RegistrazioneAudio(String titolo, int volume, int durata) {
         super(titolo);
-        if (durata >= 0) {
-            this.durata = durata;
-            this.volume = volume;
 
-        } else {
-            System.out.println("La durata deve essere maggiore di 0 riprova!");
-        }
+        this.durata = durata;
+        this.volume = volume;
+
+
     }
+
 
     public void aumentaVolume() {
         volume++;
@@ -24,8 +23,17 @@ public class RegistrazioneAudio extends ElementoMultimediale {
     }
 
     @Override
-    public void avviaAzzione() {
+    public void avviaAzione() {
         play();
 
     }
+
+
+    public void play() {
+        for (int i = 0; i < durata; i++) {
+            System.out.println(titolo + "!".repeat(volume));
+        }
+    }
+
+
 }
